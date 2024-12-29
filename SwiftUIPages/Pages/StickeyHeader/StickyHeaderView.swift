@@ -95,7 +95,7 @@ struct StickyHeaderView: View {
                         .frame(height: 150)
                     
                     HStack {
-                        Image(systemName: "airpods.gen" + "\(item)")
+                        Image(systemName: "die.face." + "\(item+1)")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 100, height: 100)
