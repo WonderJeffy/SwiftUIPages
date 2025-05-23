@@ -7,6 +7,7 @@
 
 import SwiftData
 import SwiftUI
+import DataScoutCompanion
 
 /// Create + Read + Update + Delete
 struct DataCRUDView: View {
@@ -14,6 +15,7 @@ struct DataCRUDView: View {
     @State private var path = NavigationPath()
     @State private var sortOrder = [SortDescriptor(\Objective.name)]
     @State private var searchText = ""
+    @State private var isBrowserPresented = false
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -34,8 +36,14 @@ struct DataCRUDView: View {
                     }
 
                     Button("Add Person", systemImage: "plus", action: addObjective)
+                    Button(action: { isBrowserPresented = true }) {
+                        Image(systemName: "tablecells")
+                    }
                 }
                 .searchable(text: $searchText)
+                .sheet(isPresented: $isBrowserPresented) {
+                    DatabaseBrowser()
+                }
         }
     }
 

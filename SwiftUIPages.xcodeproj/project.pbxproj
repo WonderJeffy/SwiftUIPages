@@ -82,11 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				9E117CE22D2132F7001EE3C9 /* Vendors */,
+				9E117D1B2D2135BC001EE3C9 /* Frameworks */,
+				9E117CB32D213299001EE3C9 /* Products */,
 				9E117CB42D213299001EE3C9 /* SwiftUIPages */,
 				9E117CC82D21329B001EE3C9 /* SwiftUIPagesTests */,
 				9E117CD22D21329B001EE3C9 /* SwiftUIPagesUITests */,
-				9E117D1B2D2135BC001EE3C9 /* Frameworks */,
-				9E117CB32D213299001EE3C9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +211,8 @@
 			);
 			mainGroup = 9E117CA92D213299001EE3C9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9E117CB32D213299001EE3C9 /* Products */;
 			projectDirPath = "";

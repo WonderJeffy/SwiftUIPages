@@ -1,5 +1,5 @@
 {
-  "originHash" : "664ccad7dbc719c8dc1306f2da33dabd0d9440023a92419779b551de8b2bc7ae",
+  "originHash" : "c396aec5c780e8ed3db9374a7fec9e65812c7d0aa8f66162d6d216d16da820bd",
   "pins" : [
     {
       "identity" : "concentriconboarding",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "12d3b2abd946d30bfb3ceb1b4b30f124d80983e9",
         "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "datascoutcompanion",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alex566/DataScoutCompanion.git",
+      "state" : {
+        "revision" : "0f104cdf59633541c501d3de4c7291dc87b3bffe",
+        "version" : "0.1.1"
       }
     },
     {

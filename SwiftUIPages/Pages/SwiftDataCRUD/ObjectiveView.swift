@@ -59,6 +59,9 @@ struct ObjectiveView: View {
         .listSectionSpacing(.compact)
         .listStyle(.grouped)
         .scrollContentBackground(.hidden)
+        .onAppear {
+            print(modelContext.sqliteCommand)
+        }
     }
 
     init(searchString: String = "", sortOrder: [SortDescriptor<Objective>] = []) {

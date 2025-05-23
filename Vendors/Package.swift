@@ -29,6 +29,13 @@ let package = Package(
             url: "https://github.com/izyumkin/MCEmojiPicker",
             from: "1.2.3"
         ),
+        .package(
+            url: "https://github.com/alex566/DataScoutCompanion.git",
+            from: "0.1.0"
+        ),
+        //        .package(
+        //            path: "../DataScoutCompanion"
+        //        ),
     ],
     targets: [
         .target(
@@ -37,6 +44,7 @@ let package = Package(
                 .inject,
                 .onboarding,
                 .emojiPicker,
+                .product(name: "DataScoutCompanion", package: "DataScoutCompanion"),
             ]
         ),
         .testTarget(
