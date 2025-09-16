@@ -36,7 +36,7 @@ public final class Objective {
         return keyResults.flatMap { $0.records }.sorted(by: { $0.timestamp > $1.timestamp })
     }
 
-    var tasks: [Task] {
+    var tasks: [TodoTask] {
         return keyResults.flatMap { $0.tasks }.sorted(by: { $0.schedule?.start ?? Date() > $1.schedule?.start ?? Date() })
     }
 
@@ -56,7 +56,7 @@ public final class Objective {
 
     var records: [Record] = []
 
-    var tasks: [Task] = []
+    var tasks: [TodoTask] = []
 
     init(name: String) {
         self.name = name
@@ -77,7 +77,7 @@ public final class Objective {
     }
 }
 
-@Model class Task {
+@Model class TodoTask {
 
     var name: String
 

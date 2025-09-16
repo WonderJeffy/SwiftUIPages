@@ -62,6 +62,11 @@ public struct DemoPages: View {
 //                } label: {
 //                    DemoLabel(title: "Async Images")
 //                }
+                NavigationLink {
+                    AppleFundationModelView()
+                } label: {
+                    DemoLabel(title: "Apple Foundation Model")
+                }
 
             }
             .navigationTitle(Text("APP_NAME"))
